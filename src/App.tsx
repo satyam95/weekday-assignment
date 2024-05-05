@@ -1,5 +1,6 @@
-import { Button, ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Box, Grid, ThemeProvider, createTheme } from "@mui/material";
 import "@fontsource-variable/lexend";
+import JobCard from "./components/JobCard";
 
 const theme = createTheme({
   typography: {
@@ -15,7 +16,15 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Typography>Hello world!</Typography>
+      <Box className="container-view">
+        <Box padding="24px 0">
+          <Grid container spacing="30px">
+            <Grid item xs={4}>
+              <JobCard />
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
     </ThemeProvider>
   );
 }

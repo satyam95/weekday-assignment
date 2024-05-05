@@ -2,3 +2,173 @@
   margin: 0;
   padding: 0;
 }
+
+.container-view {
+  max-width: 1140px;
+  margin: auto;
+}
+.badge-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  flex: 1 1 0%;
+}
+.badge-outer {
+  padding: 4px 6px;
+  box-shadow: rgba(6, 6, 6, 0.05) 0px 2px 6px 0px;
+  border-radius: 10px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.track-bg svg {
+  color: rgba(15, 218, 137, 0.3);
+}
+.track-bg {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+.progress-bg svg {
+  color: #55efc4;
+}
+.progress-bg {
+  position: relative;
+  z-index: 2;
+}
+
+.progress-caption {
+  font-family: Roboto, sans-serif !important;
+}
+
+.card-content-outer {
+  padding: 8px 16px !important;
+}
+
+.image-company {
+  width: 40px;
+  height: 40px;
+}
+
+.info h3 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #8b8b8b;
+}
+
+.info h2 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.country {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  margin-top: 5px !important;
+}
+
+.salary {
+  font-size: 14px !important;
+  font-weight: 300;
+  margin: 8px 0 !important;
+  color: rgb(77, 89, 106);
+  line-height: 1.43;
+}
+
+.content-head {
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.content-body {
+  color: rgba(0, 0, 0, 0.87) !important;
+  white-space: pre-wrap;
+}
+
+.description-block {
+  height: 250px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.link-container {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+  top: -20px;
+}
+
+.more-link {
+  color: #4943da;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Lexend Variable", sans-serif;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.exp {
+  margin-top: 10px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 3px !important;
+  color: #8b8b8b !important;
+}
+
+.exp-yrs {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+.btn-container {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.btn-main {
+  width: 100%;
+  background-color: rgb(85, 239, 196);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  margin: 5px 0 !important;
+  font-family: "Lexend Variable", sans-serif;
+  box-shadow: none !important;
+}
+
+.btn-main:hover {
+  background-color: rgb(85, 239, 196) !important;
+}
+
+.job-card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px !important;
+  color: rgba(0, 0, 0, 0.87) !important;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+  overflow: hidden;
+  max-width: 360px;
+  border-radius: 20px !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.job-card:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.01);
+}
