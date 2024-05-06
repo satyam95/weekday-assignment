@@ -2,52 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ClearIcon from "@mui/icons-material/Clear";
 
-export const options: string[] = [
-    "Frontend",
-    "Backend",
-    "Fullstack",
-    "IOS",
-    "Flutter",
-    "React Native",
-    "Android",
-    "Tech Lead",
-    "Dev Ops",
-    "Data Engineer",
-    "Data Science",
-    "Computer Vision",
-    "Nlp",
-    "Deep Learning",
-    "Test / Qa",
-    "Web3",
-    "Sre",
-    "Data Infrastructure",
-    "Designer",
-    "Design Manager",
-    "Graphic Designer",
-    "Producct Designer",
-    "Product Designer",
-    "Operations Manager",
-    "Founder's Office/ Cheif of Staff",
-    "Sales Development Representative",
-    "Account Executive",
-    "Account Manager",
-    "Digital Marketing Manager",
-    "Growth Hacker",
-    "Marketing",
-    "Product Marketing Manager",
-    "Hardware",
-    "Mechanical",
-    "Systems",
-    "Business Analyst",
-    "Data Analyst",
-    "Project Manager",
-    "Management",
-    "Legal",
-    "Hr",
-    "Finance",
-  ];
+type JobFilterPropsType = {
+  options: string[];
+  placeholderText: string;
+};
 
-const JobFilter = () => {
+const JobFilter = ({ placeholderText, options }: JobFilterPropsType) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [open, setOpen] = useState<boolean>(false);
   const [suggestions, setSuggestions] = useState<string[]>([]);
@@ -143,7 +103,7 @@ const JobFilter = () => {
           <></>
         )}
         {selectedItems.length === 0 && (
-          <div className="placeholder">Roles</div>
+          <div className="placeholder">{placeholderText}</div>
         )}
         <div>
           <input
